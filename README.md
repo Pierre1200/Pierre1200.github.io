@@ -7,7 +7,7 @@ novembre 2026.
 
 ## Choix techniques
 
-Site statique **écrit à la main**, sans framework, sans dépendance et sans étape
+Site statique, sans framework, sans dépendance et sans étape
 de build : un fichier HTML, une feuille de style, un PDF.
 
 - **HTML sémantique** — `header`, `nav`, `main`, `section`, `article`, `footer`
