@@ -213,19 +213,27 @@
 
         <article class="projet">
           <div class="p-head">
-            <h3>Site vitrine et back-office</h3>
-            <p class="p-tag">Projet client</p>
+            <h3>Gramme</h3>
+            <p class="p-tag">Projet personnel · en conception</p>
           </div>
-          <p class="p-sub">Studio de communication — livraison septembre 2026</p>
+          <p class="p-sub">Coût matière pour la restauration et les métiers de bouche</p>
           <p>
-            Refonte complète d'un site vitrine en application Next.js : carte
-            interactive des établissements, blog, formulaire de contact, et un
-            back-office authentifié avec zone protégée pour que le client gère
-            lui-même son contenu. Front développé en binôme avec un développeur back.
+            Un outil qui lit automatiquement les factures fournisseurs, suit
+            l'historique des prix d'achat et recalcule les coûts matière, parage et
+            rendements compris. Un bar entier à 22&nbsp;€ le kilo coûte bien plus cher
+            une fois levé en filets : tant que ça n'est pas dans le calcul, le coût
+            affiché est faux.
+          </p>
+          <p>
+            Décisions d'architecture structurantes : frontière stricte entre le modèle
+            de langage, qui extrait et rédige, et SQL, qui effectue <em>tous</em> les
+            calculs ; historique de prix en append-only ; score de confiance sur chaque
+            champ extrait, avec file de validation humaine sous un seuil donné.
+            Phase actuelle : collecte et annotation de factures réelles avant d'écrire
+            le pipeline d'extraction.
           </p>
           <ul class="chips small">
-            <li>Next.js 16</li><li>React 19</li><li>TypeScript</li>
-            <li>Supabase</li><li>Leaflet</li><li>Tailwind</li>
+            <li>Python</li><li>PostgreSQL</li><li>Pydantic</li><li>Docker</li><li>LLM</li>
           </ul>
         </article>
 
@@ -252,6 +260,12 @@
             durcissement sont en Python pur.
           </p>
           <p>
+            Les sites livrés sont en HTML, CSS et JavaScript statiques, sans
+            aucune dépendance. La modernité est allée dans le CSS : cascade
+            layers, container queries, <code>:has()</code>, <code>oklch()</code>
+            et <code>color-mix()</code>, subgrid.
+          </p>
+          <p>
             <strong>196 tests, exécutables sans clé API.</strong>
           </p>
           <ul class="chips small"><li>Python</li><li>API Claude</li><li>Playwright</li><li>pytest</li><li>Typer</li></ul>
@@ -260,27 +274,20 @@
 
         <article class="projet">
           <div class="p-head">
-            <h3>Gramme</h3>
-            <p class="p-tag">Projet personnel · en conception</p>
+            <h3>Studio Bougnat</h3>
+            <p class="p-tag">Projet client</p>
           </div>
-          <p class="p-sub">Coût matière pour la restauration et les métiers de bouche</p>
+          <p class="p-sub">Site et back-office d'un studio de communication · livraison septembre 2026</p>
           <p>
-            Un outil qui lit automatiquement les factures fournisseurs, suit
-            l'historique des prix d'achat et recalcule les coûts matière, parage et
-            rendements compris. Un bar entier à 22&nbsp;€ le kilo coûte bien plus cher
-            une fois levé en filets : tant que ça n'est pas dans le calcul, le coût
-            affiché est faux.
-          </p>
-          <p>
-            Décisions d'architecture structurantes : frontière stricte entre le modèle
-            de langage, qui extrait et rédige, et SQL, qui effectue <em>tous</em> les
-            calculs ; historique de prix en append-only ; score de confiance sur chaque
-            champ extrait, avec file de validation humaine sous un seuil donné.
-            Phase actuelle : collecte et annotation de factures réelles avant d'écrire
-            le pipeline d'extraction.
+            Création complète du site et de son back-office : carte interactive
+            des établissements du Massif central installés à Paris, blog,
+            formulaire de contact, et une zone authentifiée permettant au client
+            de gérer lui-même son contenu. Front développé en binôme avec un
+            développeur back.
           </p>
           <ul class="chips small">
-            <li>Python</li><li>PostgreSQL</li><li>Pydantic</li><li>Docker</li><li>LLM</li>
+            <li>Next.js 16</li><li>React 19</li><li>TypeScript</li>
+            <li>Supabase</li><li>Leaflet</li><li>Tailwind</li>
           </ul>
         </article>
 
