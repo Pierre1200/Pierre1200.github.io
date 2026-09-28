@@ -274,20 +274,35 @@
 
         <article class="projet">
           <div class="p-head">
-            <h3>Studio Bougnat</h3>
-            <p class="p-tag">Projet client</p>
+            <h3>Mavaya</h3>
+            <p class="p-tag">Projet de fin d'études · commanditaire réel</p>
           </div>
-          <p class="p-sub">Site et back-office d'un studio de communication · livraison septembre 2026</p>
+          <p class="p-sub">Plateforme d'orientation pour les familles monoparentales · livraison novembre 2026</p>
           <p>
-            Création complète du site et de son back-office : carte interactive
-            des établissements du Massif central installés à Paris, blog,
-            formulaire de contact, et une zone authentifiée permettant au client
-            de gérer lui-même son contenu. Front développé en binôme avec un
-            développeur back.
+            Développée en binôme pour l'association Mavaya. Un parent répond à un
+            questionnaire, obtient des indicateurs de situation par thème, suit
+            leur évolution dans le temps et reçoit un plan d'action l'orientant
+            vers les dispositifs d'aide auxquels il a droit.
+          </p>
+          <p>
+            Les réponses touchent au stress parental et à la détresse
+            psychologique : ce sont des données de santé au sens du RGPD, pour un
+            public vulnérable. L'architecture en découle. Le code calcule les
+            scores, les seuils et les éligibilités ; le modèle de langage rédige
+            et oriente, et ne produit jamais un chiffre ni une décision. Toute
+            réponse signalant un risque déclenche l'affichage des numéros
+            d'urgence et une alerte en back-office par une règle déterministe qui
+            court-circuite le modèle. Rien ne sort vers un service tiers sans
+            pseudonymisation, les recommandations ne viennent que d'un corpus
+            vérifié et citent leur source, et l'historique des passations n'est
+            jamais modifié.
+          </p>
+          <p>
+            <strong>Accessibilité RGAA et WCAG AA exigée, pas optionnelle.</strong>
           </p>
           <ul class="chips small">
             <li>Next.js 16</li><li>React 19</li><li>TypeScript</li>
-            <li>Supabase</li><li>Leaflet</li><li>Tailwind</li>
+            <li>FastAPI</li><li>PostgreSQL + pgvector</li><li>Mistral AI</li><li>Keycloak</li>
           </ul>
         </article>
 
