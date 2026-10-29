@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pierre Rouvellat — Développeur full stack &amp; IA agentic</title>
-<meta name="description" content="Développeur full stack et IA agentic à Rodez. 15 ans en cuisine, une reconversion, et aujourd'hui des applications web et des systèmes d'agents. Recherche une alternance pour novembre 2026.">
+<meta name="description" content="Développeur full stack et IA agentic à Rodez. 15 ans en cuisine, une reconversion, et aujourd'hui des applications web et des systèmes d'agents. Recherche une alternance pour mars 2027.">
 <meta name="author" content="Pierre Rouvellat">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Pierre Rouvellat — Développeur full stack &amp; IA agentic">
-<meta property="og:description" content="15 ans en cuisine, une reconversion, et aujourd'hui du code tous les jours. Recherche une alternance pour novembre 2026.">
+<meta property="og:description" content="15 ans en cuisine, une reconversion, et aujourd'hui du code tous les jours. Recherche une alternance pour mars 2027.">
 <meta property="og:url" content="https://pierre1200.github.io/">
 <meta property="og:image" content="https://pierre1200.github.io/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Pierre Rouvellat, développeur full stack et IA agentic, recherche une alternance dès novembre 2026">
+<meta property="og:image:alt" content="Pierre Rouvellat, développeur full stack et IA agentic, recherche une alternance dès mars 2027">
 <meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -103,7 +103,7 @@
 
       <div class="tl">
         <article class="tl-item">
-          <p class="tl-date">à partir de<br>nov. 2026</p>
+          <p class="tl-date">à partir de<br>mars 2027</p>
           <div>
             <h3>Bachelor Full Stack Agentique</h3>
             <p class="tl-org">Holberton School — titre RNCP niveau 6</p>
@@ -213,27 +213,47 @@
 
         <article class="projet">
           <div class="p-head">
-            <h3>Gramme</h3>
-            <p class="p-tag">Projet personnel · en conception</p>
+            <h3>Mavaya</h3>
+            <p class="p-tag">Projet de fin d'études · commanditaire réel</p>
           </div>
-          <p class="p-sub">Coût matière pour la restauration et les métiers de bouche</p>
+          <p class="p-sub">Plateforme d'orientation pour les familles monoparentales · livraison novembre 2026</p>
           <p>
-            Un outil qui lit automatiquement les factures fournisseurs, suit
-            l'historique des prix d'achat et recalcule les coûts matière, parage et
-            rendements compris. Un bar entier à 22&nbsp;€ le kilo coûte bien plus cher
-            une fois levé en filets : tant que ça n'est pas dans le calcul, le coût
-            affiché est faux.
+            Développée en binôme pour l'association Mavaya. En France, 3,2 millions
+            de familles sont monoparentales et plus d'un tiers vivent sous le seuil
+            de pauvreté. L'aide existe, mais elle est éparpillée entre une dizaine
+            d'organismes, chacun avec ses critères et son vocabulaire. Un parent
+            épuisé n'a pas l'énergie de cartographier ça, et renonce à des droits
+            qui lui sont ouverts.
           </p>
           <p>
-            Décisions d'architecture structurantes : frontière stricte entre le modèle
-            de langage, qui extrait et rédige, et SQL, qui effectue <em>tous</em> les
-            calculs ; historique de prix en append-only ; score de confiance sur chaque
-            champ extrait, avec file de validation humaine sous un seuil donné.
-            Phase actuelle : collecte et annotation de factures réelles avant d'écrire
-            le pipeline d'extraction.
+            La plateforme le fait à sa place : compte avec consentement donné
+            séparément pour l'accompagnement et pour la recherche, questionnaire
+            repris là où il avait été interrompu, un indicateur par thème et
+            <em>aucune note globale</em>, l'évolution depuis la fois précédente, et
+            un plan d'action dont chaque démarche cite sa source officielle, à
+            l'écran, en PDF ou par courriel.
+          </p>
+          <p>
+            Les réponses touchent au stress parental : ce sont des données de santé
+            au sens du RGPD, pour un public vulnérable. L'architecture en découle, et
+            tient en une phrase : <strong>le code calcule, l'IA rédige.</strong> Aucun
+            score, aucun seuil, aucune éligibilité ne sort d'un modèle de langage. Le
+            modèle rédige et ordonne, depuis un corpus fermé, chaque citation étant
+            vérifiée avant affichage. Ce qui lui est transmis est pseudonymisé et
+            généralisé, et aucun texte libre écrit par une personne ne quitte
+            l'infrastructure.
+          </p>
+          <p>
+            Le parcours fonctionne de bout en bout et la pile de production se lève,
+            sauvegardes comprises. <strong>Couverture de tests exigée à 100 % sur les
+            modules déterministes</strong>, accessibilité RGAA mesurée automatiquement
+            à chaque intégration. Le site tourne sur des données générées : l'hébergement
+            certifié santé est hors budget, et un bandeau le rappelle sur chaque page.
           </p>
           <ul class="chips small">
-            <li>Python</li><li>PostgreSQL</li><li>Pydantic</li><li>Docker</li><li>LLM</li>
+            <li>Next.js 16</li><li>React 19</li><li>TypeScript</li>
+            <li>FastAPI</li><li>PostgreSQL + pgvector</li><li>Keycloak</li>
+            <li>Docker</li><li>Playwright</li><li>Mistral AI</li>
           </ul>
         </article>
 
@@ -274,35 +294,34 @@
 
         <article class="projet">
           <div class="p-head">
-            <h3>Mavaya</h3>
-            <p class="p-tag">Projet de fin d'études · commanditaire réel</p>
+            <h3>Gramme</h3>
+            <p class="p-tag">Projet personnel · en conception</p>
           </div>
-          <p class="p-sub">Plateforme d'orientation pour les familles monoparentales · livraison novembre 2026</p>
+          <p class="p-sub">Coût matière pour la restauration et les métiers de bouche</p>
           <p>
-            Développée en binôme pour l'association Mavaya. Un parent répond à un
-            questionnaire, obtient des indicateurs de situation par thème, suit
-            leur évolution dans le temps et reçoit un plan d'action l'orientant
-            vers les dispositifs d'aide auxquels il a droit.
+            Un outil qui lit automatiquement les factures fournisseurs, suit
+            l'historique des prix d'achat et recalcule les coûts matière, parage et
+            rendements compris. Un bar entier à 22&nbsp;€ le kilo coûte bien plus cher
+            une fois levé en filets : tant que ça n'est pas dans le calcul, le coût
+            affiché est faux.
           </p>
           <p>
-            Les réponses touchent au stress parental et à la détresse
-            psychologique : ce sont des données de santé au sens du RGPD, pour un
-            public vulnérable. L'architecture en découle. Le code calcule les
-            scores, les seuils et les éligibilités ; le modèle de langage rédige
-            et oriente, et ne produit jamais un chiffre ni une décision. Toute
-            réponse signalant un risque déclenche l'affichage des numéros
-            d'urgence et une alerte en back-office par une règle déterministe qui
-            court-circuite le modèle. Rien ne sort vers un service tiers sans
-            pseudonymisation, les recommandations ne viennent que d'un corpus
-            vérifié et citent leur source, et l'historique des passations n'est
-            jamais modifié.
+            Décisions d'architecture structurantes : frontière stricte entre le modèle
+            de langage, qui extrait et rédige, et SQL, qui effectue <em>tous</em> les
+            calculs ; historique de prix en append-only ; score de confiance sur chaque
+            champ extrait, avec file de validation humaine sous un seuil donné.
           </p>
           <p>
-            <strong>Accessibilité RGAA et WCAG AA exigée, pas optionnelle.</strong>
+            Les fondations sont écrites et auditées, <strong>124 tests verts</strong>,
+            intégration continue sur PostgreSQL, et une démonstration qui tourne sur
+            des données fictives mais des calculs réels. Le banc d'essai est prêt
+            avant l'extraction elle-même : chaque champ lu sera jugé correct,
+            abstention ou faux, parce qu'un outil de coût matière qui invente un
+            chiffre est pire que pas d'outil du tout. Phase actuelle : collecte et
+            annotation de factures réelles.
           </p>
           <ul class="chips small">
-            <li>Next.js 16</li><li>React 19</li><li>TypeScript</li>
-            <li>FastAPI</li><li>PostgreSQL + pgvector</li><li>Mistral AI</li><li>Keycloak</li>
+            <li>Python</li><li>PostgreSQL</li><li>Pydantic</li><li>Docker</li><li>LLM</li>
           </ul>
         </article>
 
@@ -388,7 +407,7 @@
     <div class="wrap">
       <h2><span class="num">06</span> Contact</h2>
       <p class="contact-intro">
-        Je cherche une alternance de développeur pour novembre 2026, en contrat de
+        Je cherche une alternance de développeur pour mars 2027, en contrat de
         professionnalisation. Je suis également disponible pour un <strong>stage jusqu'à
         3 mois</strong>, durée à convenir. À Rodez et dans son agglomération, ou en télétravail.
         Si mon profil vous parle, ou si vous voulez simplement échanger, écrivez-moi.
